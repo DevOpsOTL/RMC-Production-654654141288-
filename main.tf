@@ -4,13 +4,13 @@ provider "aws" {
   region = var.region
 }
 
-/*  DIC PROD S3 BUCKET
+/* S3 BUCKET
 ===============================================================*/
-module "dic-prod-bucket" {
-    source        = "./modules/S3"
-    region        = var.region
-    bucket_name   = var.bucket_name
-}
+# module "dic-prod-bucket" {
+#     source        = "./modules/S3"
+#     region        = var.region
+#     bucket_name   = var.bucket_name
+# }
 
 /*  DIC PROD LOGS S3 BUCKET
 ===============================================================*/
